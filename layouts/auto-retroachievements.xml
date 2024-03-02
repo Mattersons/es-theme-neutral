@@ -1,0 +1,11 @@
+<theme>
+<formatVersion>7</formatVersion>
+<view name="system">
+
+<text name="systemInfoEx" extra="true" ifSubset="sysinfo:Yes">
+<visible>false</visible>
+</text>
+
+</view>
+
+</theme>

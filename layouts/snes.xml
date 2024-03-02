@@ -1,0 +1,38 @@
+<theme>
+	<formatVersion>7</formatVersion>
+	
+	<view name="detailed,video">
+			
+	<image name="md_thumbnail">
+			<maxSize>0.145 0.300</maxSize>
+			<pos>0.59 0.73</pos>
+			<origin>0.5 0.5</origin>
+			<visible>true</visible>
+		</image>
+</view>
+
+	<customView name="detailed2">
+			
+	<image name="md_thumbnail">
+			<maxSize>0.160 0.310</maxSize>
+			<pos>0.605 0.36</pos>
+			<origin>0.5 0.5</origin>
+			<visible>true</visible>
+		</image>
+</customView>
+
+
+<view name="grid">
+<imagegrid name="gamegrid">
+           <autoLayout>6 3</autoLayout>
+     </imagegrid>
+</view>
+
+<customView name="grid2">
+	<imagegrid name="gamegrid">
+           <autoLayout>7 1</autoLayout>
+	<autoLayoutSelectedZoom>1.1</autoLayoutSelectedZoom>
+	</imagegrid>
+</customView>
+
+</theme>

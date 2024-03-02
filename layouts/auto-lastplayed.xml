@@ -1,0 +1,28 @@
+<theme>
+<formatVersion>7</formatVersion>
+<view name="system">
+
+<text name="systemInfoEx" extra="true" ifSubset="sysinfo:Yes">
+<visible>false</visible>
+</text>
+
+</view>
+
+
+<view name="gamecarousel">
+
+
+<image name="logosys" extra="true">
+	<path>./../systems/logo/{game:system:name}.svg</path>
+	<maxSize>0.150 0.050</maxSize>
+	<pos>0.880 0.090</pos>
+	<origin>0.5 0.5</origin>
+	<verticalAlignment>center</verticalAlignment>
+	</image>
+
+
+</view>
+
+
+</theme>
+

@@ -1,0 +1,112 @@
+<theme>
+<formatVersion>7</formatVersion>
+
+<view name="detailed">
+
+<image name="ct" extra="true">
+<path>{game:thumbnail}</path>
+	<pos>0.592 0.735</pos>
+	<maxSize>0.165 0.335</maxSize>
+	<origin>0.5 0.5</origin>
+	<visible>!{game:folder}</visible>
+	</image>
+
+<image name="md_thumbnail">
+<visible>false</visible>
+</image>
+
+<image name="md_marquee">
+<visible>false</visible>
+</image>
+
+
+<image name="cm" extra="true">
+<path>{game:marquee}</path>
+	   <origin>0.5 0.5</origin>
+       <pos>0.75 0.080</pos>
+         <maxSize>0.20 0.15</maxSize>
+		 <visible>!{game:folder}</visible>
+</image>
+
+<video name="md_video">
+<visible>false</visible>
+</video>
+
+<video name="cv" extra="true">
+	<path>{game:video}</path>
+	<maxSize>0.36 0.36</maxSize>
+	<pos>0.752 0.358</pos>
+	<origin>0.5 0.5</origin>
+	<delay>0</delay>
+	<zIndex>90</zIndex>
+	<roundCorners>0.05</roundCorners>
+	 <visible>!{game:folder}</visible>
+</video>
+
+</view>
+
+<customView name="detailed2">
+<image name="ct" extra="true">
+<path>{game:thumbnail}</path>
+	<pos>0.605 0.36</pos>
+	<maxSize>0.165 0.335</maxSize>
+	<origin>0.5 0.5</origin>
+	<visible>!{game:folder}</visible>
+</image>
+
+<image name="md_thumbnail">
+<visible>false</visible>
+</image>
+
+<video name="md_video">
+	<visible>false</visible>
+</video>
+
+<video name="cv" extra="true">
+<path>{game:video}</path>
+	<maxSize>0.36 0.36</maxSize>
+	<pos>0.842 0.358</pos>
+	<origin>0.5 0.5</origin>
+	<delay>0</delay>
+	<zIndex>90</zIndex>
+	<roundCorners>0.05</roundCorners>
+	 <visible>!{game:folder}</visible>
+</video>
+</customView>
+
+<view name="grid">
+	
+<image name="md_marquee">
+<visible>false</visible>
+</image>
+
+<image name="cm" extra="true">
+<path>{game:marquee}</path>
+	   <origin>0.5 0.5</origin>
+         <pos>0.880 0.084</pos>
+         <maxSize>0.14 0.10</maxSize>
+		 <visible>!{game:folder}</visible>
+</image>	
+</view>	
+
+<view name="gamecarousel">
+
+
+<image name="logosys" extra="true">
+	<path>./../systems/logo/{game:system:name}.svg</path>
+	<maxSize>0.150 0.050</maxSize>
+	<pos>0.880 0.090</pos>
+	<origin>0.5 0.5</origin>
+	<verticalAlignment>center</verticalAlignment>
+	</image>
+
+</view>
+
+<view name="system">
+
+<text name="systemInfoEx" extra="true" ifSubset="sysinfo:Yes">
+<visible>false</visible>
+</text>
+</view>
+
+</theme>

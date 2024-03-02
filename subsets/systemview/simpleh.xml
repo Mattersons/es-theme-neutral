@@ -1,0 +1,71 @@
+<theme>
+<formatVersion>7</formatVersion>
+<view name="system">
+ 
+<image name="background" extra="static">
+	<origin>0 0</origin>
+	<pos>0 0</pos>
+	<size>1 1</size>
+	<path>./../../art/bgss.png</path>
+</image>
+
+<carousel name="systemcarousel">
+	<type>horizontal</type>
+	<color>5B5B5B00</color>
+	<origin>0 0</origin>
+	<pos>0 0.020</pos>
+	<size>1 0.40</size> 
+	<logoScale>2.4</logoScale>
+	<logoSize>0.180 0.140</logoSize>
+    	<systemInfoDelay>200</systemInfoDelay>
+	<maxLogoCount>1</maxLogoCount>
+</carousel>
+ 
+<image name="logo">
+	<linearSmooth>true</linearSmooth>
+	<path>./../../systems/logo/${system.theme}.svg</path>
+	<path>./../../systems/logo/${system.theme}.png</path>
+</image>
+
+<image name="logo" region="eu"/>
+<image name="logo" region="us">
+	<path>./../../systems/logo/us/${system.theme}.svg</path>
+	<path>./../../systems/logo/us/${system.theme}.png</path>
+</image>
+	
+<image name="systemsnap" extra="true">
+	<path>./../../systems/device/${system.theme}.png</path>
+ 	<origin>0.5 0.5</origin>
+	<pos>0.5 0.62</pos>
+	<maxSize>0.380 0.380</maxSize>
+	<linearSmooth>true</linearSmooth>
+	<storyboard>	 
+	 <animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+     <animation property="opacity" from="0" to="1" begin="250" duration="50" mode="easeIn"/>
+	 <animation property="scale" from="0" to="1.5" begin="250" duration="250" mode="easeOut"/> 
+	  <animation property="scale" from="1.5" to="1" begin="500" duration="250" mode="easeOut"/>
+	</storyboard>
+</image>
+
+<image name="systemsnap" extra="true" region="eu"/>
+	<image name="systemsnap" extra="true" region="us">
+	<path>./../../systems/device/us/${system.theme}.png</path>
+</image>
+
+<text name="systemInfo">
+	<pos>0 0.860</pos>           
+	<color>FFFFFF</color>
+	<fontPath>./../../fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+	<fontSize>0.04</fontSize>
+    <glowColor>00000016</glowColor>
+    <glowSize>3</glowSize>
+</text>
+	
+<helpsystem name="help">
+	<origin>0.5 0</origin>
+	<pos>0.5 0.950</pos>
+	</helpsystem>
+
+</view>
+
+</theme>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <customView name="system,basic,detailed,grid,detailed2,grid2,grid3,grid4,gamecarousel">
+    <helpsystem name="help">
+      <textColor>505050</textColor>
+      <iconColor>000000</iconColor>
+      <fontSize>0.032</fontSize>
+     </helpsystem>
+  </customView>
+</theme>

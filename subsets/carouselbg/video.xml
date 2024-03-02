@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+ <view name="gamecarousel">
+
+<image name="md_thumbnail">
+	<pos>0.10 0.690</pos>
+	<maxSize>0.165 0.335</maxSize>
+	<origin>0.5 0.5</origin>
+<storyboard event="open">
+				<animation property="offsetX" from="-0.2" to="0" duration="600" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="activate">
+				<animation property="offsetX" from="-0.2" to="0" begin="" duration="600" mode="EaseOutQuint"/>
+			</storyboard>
+			<storyboard event="deactivate">
+				<animation property="opacity" from="0" to="0" duration="" mode="Linear"/>
+			</storyboard>
+	</image>
+
+
+ 	<video name="md_video">
+         <pos>0 0.160</pos>
+         <size>1 0.770</size>
+         <origin>0 0</origin>
+         <delay>0.2</delay>
+         <showSnapshotNoVideo>false</showSnapshotNoVideo>
+         <showSnapshotDelay>false</showSnapshotDelay>
+         <effect>none</effect>
+	 <zIndex>2</zIndex>
+	 </video>  
+
+
+</view>
+</theme>

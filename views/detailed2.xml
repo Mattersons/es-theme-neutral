@@ -1,0 +1,118 @@
+<theme>
+<formatVersion>7</formatVersion>
+
+<customView name="detailed2" inherits="detailed" displayName="Detailed (Alternate)">
+
+
+<image name="bar2" extra="true">
+		<path>./../art/bar.png</path>
+        <pos>0.515 0.685</pos>
+        <size>0.47 0.22</size>
+</image>
+
+<datetime name="md_releasedate">
+	<pos>0.56 0.556</pos>
+	<fontPath>./../fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+	<fontSize>0.038</fontSize>
+	<color>FFFFFF</color>
+	<visible>true</visible>
+	<format>%Y</format>
+</datetime>
+
+<text name="md_developer">
+	<fontPath>./../fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+	<fontSize>0.020</fontSize>
+	<forceUppercase>true</forceUppercase>
+	<size>0.30 0.05</size>
+	<color>FFFFFF</color>
+	<visible>true</visible>
+	<pos>0.53 0.61</pos>
+	<alignment>left</alignment>
+</text>
+
+<text name="md_genre">
+	<fontPath>./../fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+	<fontSize>0.020</fontSize>
+	<forceUppercase>false</forceUppercase>
+	<size>0.30 0.05</size>
+	<color>696969</color>
+	<visible>true</visible>
+	<pos>0.67 0.609</pos>
+	<alignment>right</alignment>
+</text>
+
+<text name="md_description">
+      <pos>0.520 0.698</pos>
+      <size>0.46 0.20</size>
+	  <color>C0C0C0</color>
+      <forceUppercase>0</forceUppercase>
+      <fontPath>./../fonts/Cabin-Regular.ttf</fontPath>
+      <fontSize>0.023</fontSize>
+      <alignment>center</alignment>
+</text>
+
+<image name="md_thumbnail">
+	<pos>0.605 0.36</pos>
+	<maxSize>0.145 0.300</maxSize>
+	<origin>0.5 0.5</origin>
+	<visible>true</visible>
+</image>
+
+<image name="md_flag" ifSubset="flags:yes">
+<origin>0 0.5</origin>
+<pos>0.53 0.584</pos>
+<maxSize>0.02 0.04</maxSize>
+</image>
+
+<image name="md_flag" ifSubset="flags:no">
+<visible>false</visible>
+	</image>
+
+<image name="rdate" extra="true" ifSubset="flags:no">
+	<path>./../art/date.png</path>
+	<origin>0.0 0.0</origin>
+	<pos>0.53 0.570</pos>
+	<size>0.015 0.028</size>
+	<color>${baseColour}</color>
+</image>
+
+<image name="md_savestate,md_nosavestate" ifSubset="icons:Yes">
+      <pos>0.73 0.585</pos>
+</image>
+
+<image name="md_manual,md_nomanual" ifSubset="icons:Yes">
+      <pos>0.76 0.585</pos>
+</image>
+
+<image name="md_cheevosmd_notcheevos" ifSubset="icons:Yes">
+      <pos>0.82 0.585</pos>
+</image>
+	  
+<image name="md_kidgame,md_notkidgame" ifSubset="icons:Yes">
+	  <pos>0.79 0.585</pos>
+</image>
+
+<!--fake -->
+<image name="fcheevo" extra="true" ifSubset="icons:Yes">
+		<pos>0.82 0.585</pos>
+</image>
+
+ <text name="md_players">
+	<fontPath>./../fonts/players.ttf</fontPath>
+	<fontSize>0.050</fontSize>
+	<text>1</text>
+	<forceUppercase>false</forceUppercase>
+	<pos>0.65 0.562</pos>
+	<color>${baseColour}</color>
+</text>
+
+<text name="md_lbl_players, md_lbl_playcount, md_lbl_lastplayed, md_playcount, md_lastplayed, md_lbl_publisher, md_publisher, md_lbl_rating">
+<visible>false</visible>
+</text>
+
+<video name="md_video">
+	<pos>0.842 0.358</pos>
+</video>
+
+</customView>
+</theme>

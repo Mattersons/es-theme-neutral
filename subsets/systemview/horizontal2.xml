@@ -1,0 +1,134 @@
+<theme>
+<formatVersion>7</formatVersion>
+<view name="system">
+
+<image name="background" extra="static">
+	<origin>0 0</origin>
+	<pos>0 0</pos>
+	<size>1 1</size>
+	<path>./../../art/bgsh2.png</path>
+</image>
+
+<carousel name="systemcarousel">
+	<type>horizontal</type>
+	<color>5B5B5B00</color>
+	<origin>0 0</origin>
+	<pos>0 0.350</pos>
+	<size>1 0.22</size> 
+	<logoScale>2.2</logoScale>
+	<logoSize>0.156 0.098</logoSize>
+    <systemInfoDelay>400</systemInfoDelay>
+	<maxLogoCount>3</maxLogoCount>
+</carousel>
+ 
+<image name="logo">
+	<linearSmooth>true</linearSmooth>
+	<path>./../../systems/logo/${system.theme}.svg</path>
+	<path>./../../systems/logo/${system.theme}.png</path>
+</image>
+
+<image name="logo" region="eu"/>
+<image name="logo" region="us">
+	<path>./../../systems/logo/us/${system.theme}.svg</path>
+	<path>./../../systems/logo/us/${system.theme}.png</path>
+</image>
+	
+<image name="systemsnap" extra="true">
+	<path>./../../systems/device/${system.theme}.png</path>
+ 	<origin>0.5 0.5</origin>
+	<pos>0.5 0.78</pos>
+	<maxSize>0.180 0.180</maxSize>
+	<linearSmooth>true</linearSmooth>
+	<storyboard>	 
+	 <animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+     <animation property="opacity" from="0" to="1" begin="250" duration="50" mode="easeIn"/>
+	 <animation property="scale" from="0" to="1.5" begin="250" duration="250" mode="easeOut"/> 
+	  <animation property="scale" from="1.5" to="1" begin="500" duration="250" mode="easeOut"/>
+	</storyboard>
+</image>
+
+<image name="systemsnap" extra="true" region="eu"/>
+	<image name="systemsnap" extra="true" region="us">
+	<path>./../../systems/device/us/${system.theme}.png</path>
+</image>
+
+<text name="systemInfoEx" extra="static" ifSubset="sysinfo:Yes">
+<text>{binding:gamesPlayed} OF {binding:total} GAMES PLAYED
+LAST PLAYED: {binding:lastPlayedDate}</text>
+      <fontPath>./../../fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+      <fontSize>0.020</fontSize>
+	<alignment>right</alignment> 
+	<origin>0.5 0.5</origin> 
+	<size>0.94 0.28</size>    
+	<pos>0.50 0.10</pos>
+     <color>FFFFFF</color>
+	 <glowColor>00000016</glowColor>
+        <glowSize>3</glowSize>
+   <storyboard>
+     <!--   <animation property="y" from="-0.8" begin="0" duration="450" mode="easeOut"/>-->
+	    <animation property="opacity" from="0" to="1" duration="850" mode="easeIn"/>
+        </storyboard>	
+</text>
+  
+ <text name="fName" extra="static">
+        <text>${system.fullName}</text>
+        <fontPath>./../../fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+        <fontSize>0.025</fontSize>
+		<origin>0 0.5</origin>
+        <pos>0.02 0.08</pos>
+        <size>0.94 0.28</size>
+        <color>FFFFFF</color>
+		<alignment>left</alignment>
+		<glowColor>00000016</glowColor>
+        <glowSize>3</glowSize>
+		<storyboard>
+        <animation property="y" from="-0.8" begin="0" duration="350" mode="easeOut"/>
+	    <animation property="opacity" from="0" to="1" duration="250" mode="easeIn"/>
+        </storyboard>
+</text>
+
+<text name="mName" extra="static">
+        <text>${system.manufacturer}</text>
+        <fontPath>./../../fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+        <fontSize>0.020</fontSize>
+		<forceUppercase>true</forceUppercase>
+		<origin>0 0.5</origin>
+        <pos>0.02 0.12</pos>
+        <size>0.94 0.28</size>
+		<color>909090</color>
+		<glowColor>00000016</glowColor>
+        <glowSize>3</glowSize>
+	    <storyboard>
+        <animation property="y" from="-0.8" begin="0" duration="450" mode="easeOut"/>
+	    <animation property="opacity" from="0" to="1" duration="250" mode="easeIn"/>
+        </storyboard>
+</text>	
+
+<image name="controller" extra="static">
+       <pos>0.5 0.16</pos>
+      <origin>0.5 0.5</origin>
+      <maxSize>0.15 0.15</maxSize>
+      <path>./../../systems/controllers/${system.theme}.svg</path>
+      <color>000000</color>
+      <linearSmooth>true</linearSmooth>
+</image>
+	
+<text name="systemInfo">
+	<pos>0.5 0.620</pos>
+	<origin>0.5 0.5</origin>
+	<color>FFFFFF</color>
+	<fontPath>./../../fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+	<fontSize>0.028</fontSize>
+	<glowColor>00000016</glowColor>
+    <glowSize>3</glowSize>
+	<alignment>center</alignment>
+</text>
+	
+<helpsystem name="help">
+	<origin>0.5 0</origin>
+	<pos>0.5 0.950</pos>
+</helpsystem>
+
+</view>
+
+</theme>

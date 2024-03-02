@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Theme:			Neutral
+Author:			Matt
+github:			https://github.com/
+Originally based on:	"Carbon" by Fabrice CARUSO
+-->
+
+<theme defaultView="detailed">
+<formatVersion>7</formatVersion>
+
+<include>./views/basic.xml</include>
+<include>./views/detailed.xml</include>
+<include>./views/detailed2.xml</include>
+<include>./views/grid.xml</include>
+<include>./views/grid3.xml</include>
+<include>./views/grid2.xml</include>
+<include>./views/gamecarousel.xml</include>
+
+<include>./layouts/${system.theme}.xml</include>
+
+<subset name="systemview" displayName="System View">
+    	  <include name="horizontal" displayName="Horizontal">./subsets/systemview/horizontal.xml</include>
+	  <include name="horizontal2" displayName="Horizontal (Alternative)">./subsets/systemview/horizontal2.xml</include>
+	  <include name="simpleh" displayName="Horizontal (Simple)">./subsets/systemview/simpleh.xml</include>
+	  <include name="horizontal3" displayName="Carousel">./subsets/systemview/carousel.xml</include>
+	  <include name="vertical" displayName="Vertical">./subsets/systemview/vertical.xml</include>
+	  <include name="simplev" displayName="Vertical (Simple)">./subsets/systemview/simplev.xml</include>
+</subset>
+
+<variables>
+	<baseColour ifSubset="colorset:red">8b0000</baseColour>
+	<baseColour ifSubset="colorset:green">40826D</baseColour>
+	<baseColour ifSubset="colorset:yellow">bf9f1c</baseColour>
+	<baseColour ifSubset="colorset:orange">FF9138</baseColour>
+	<baseColour ifSubset="colorset:blue">3082ce</baseColour>
+	
+	<textColour ifSubset="listcolour:black">000000</textColour>
+	<textColour ifSubset="listcolour:white">969696</textColour>
+	</variables>
+
+ <subset name="colorset" displayName="Colour">
+	<include name="blue" displayName="Blue" />
+   	<include name="red" displayName="Red" />
+	<include name="green" displayName="Green" />
+	<include name="yellow" displayName="Yellow" />
+	<include name="orange" displayName="Orange" />
+ </subset> 
+
+<subset name="Font" displayName="Game list font" appliesTo="detailed,detailed2">
+		<include name="Default" />	
+		<include name="Arcade">./subsets/fonts/arcade.xml</include>
+		<include name="Cabin-Regular">./subsets/fonts/cabin-regular.xml</include>
+		<include name="Oswald-Regular">./subsets/fonts/oswald-regular.xml</include>
+		<include name="RobotoCondensed-Medium">./subsets/fonts/robotocondensed-medium.xml</include>
+		<include name="Orbitron-SemiBold">./subsets/fonts/orbitron-semibold.xml</include>		
+</subset> 
+
+ <subset name="ucase" displayName="Uppercase game titles" appliesTo="detailed,detailed2,grid,grid2,grid3,basic">
+     <include name="no" displayName="No" />
+     <include name="yes" displayName="Yes" />
+</subset>
+
+ <subset name="listcolour" displayName="Game list text colour" appliesTo="detailed,detailed2,grid,grid2,grid3,basic">
+     <include name="white" displayName="White" />
+     <include name="black" displayName="Black" />
+</subset>
+
+<subset name="gridnames" displayName="Show game name under box art" appliesTo="grid,grid2,grid3">
+	<include name="yes" displayName="Yes" />
+	<include name="no" displayName="No" />
+</subset>
+
+<subset name="flags" displayName="Show flag icon" appliesTo="detailed,detailed2,grid,grid2,grid3,gamecarousel">
+	<include name="no" displayName="No" />	
+	<include name="yes" displayName="Yes" />	
+</subset>
+
+<subset name="icons" displayName="Show icons" appliesTo="detailed,detailed2,grid,grid2,grid3,gamecarousel">
+	<include name="yes" displayName="Yes" />	
+	<include name="no" displayName="No" />
+</subset>
+
+<subset name="cview" displayName="Carousel background" appliesTo="gamecarousel">
+	<include name="video" displayName="Large video, small boxart">./subsets/carouselbg/video.xml</include>
+	<include name="box" displayName="Large boxart, small video">./subsets/carouselbg/box.xml</include>
+</subset>
+
+<subset name="sysinfo" displayName="Show extended system info on carousel">
+	<include name="yes" displayName="Yes" />
+	<include name="no" displayName="No" />
+</subset>
+
+  <subset name="helpsystem" displayName="Help icons">
+    <include name="standard" displayName="Default">./subsets/help/default.xml</include>
+    <include name="colored" displayName="Default with theme colour">./subsets/help/colorhelp.xml</include>
+	<include name="buttons" displayName="Buttons with location">./subsets/help/buttons.xml</include>
+    <include name="xboxbuttons" displayName="Xbox">./subsets/help/xboxbuttons.xml</include>
+    <include name="psxbuttons" displayName="Playstation">./subsets/help/psxbuttons.xml</include>
+  </subset>
+
+  <subset name="shader" displayName="Shader">
+    <include name="None" displayName="None"/>
+    <include name="Scanlines" displayName="Scanlines">./subsets/shader/scanlines.xml</include>
+    <include name="Crt" displayName="CRT">./subsets/shader/crt.xml</include>
+  </subset>
+
+
+<view name="screen">
+
+<controllerActivity name="controllerActivity">
+	<pos>0.01 0.012</pos>
+	<size>0.185 0.023</size>
+	<color>FFFFFF90</color>
+	<imagePath>./art/gamepad.png</imagePath>
+	<activityColor>A0A0FFC0</activityColor>
+</controllerActivity>
+
+<!--
+<batteryIndicator name="batteryIndicator">
+-->
+
+<text name="clock">
+	<pos>0.950 0.935</pos>
+	<size>0 0</size>
+	<color>000000</color>
+	<fontSize>0.04</fontSize>
+</text>
+</view>
+
+
+ <view name="menu">
+<menuText name="menutitle">
+	<fontPath>./fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+	<fontSize>0.030</fontSize>
+	<color>FFFFFF</color>
+</menuText>
+  
+<menuText name="menufooter">
+	<fontPath>./fonts/Cabin-Regular.ttf</fontPath>
+	<fontSize>0.02</fontSize>
+	<color>777777FF</color>
+</menuText>
+  
+<menuText name="menutext">
+	<fontPath>./fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+	<fontSize>0.028</fontSize>
+	<color>909090</color>
+	<separatorColor>202020</separatorColor>
+	<selectorColor>${baseColour}</selectorColor>
+	<selectedColor>FFFFFF</selectedColor>
+</menuText>
+	
+<menuTextSmall name="menutextsmall">
+	<fontPath>./fonts/Cabin-Regular.ttf</fontPath>
+	<fontSize>0.016</fontSize>
+	<color>FFFFFF</color>
+</menuTextSmall>
+   
+<menuGroup name="menugroup">
+	<fontPath>./fonts/Cabin-Regular.ttf</fontPath>
+	<fontSize>0.018</fontSize>
+	<color>${baseColour}</color>
+	<backgroundColor>00000000</backgroundColor>
+	<lineSpacing>2</lineSpacing>
+</menuGroup>
+ 
+<menuBackground name="menubg">
+	<color>303030</color>
+	<path>./art/frame.png</path>
+	<cornerSize>30 30</cornerSize>
+	<scrollbarColor>96969620</scrollbarColor>
+	<scrollbarCorner>0.49</scrollbarCorner>
+	<scrollbarSize>0.003</scrollbarSize>
+	<scrollbarAlignment>innerright</scrollbarAlignment>
+</menuBackground>
+
+ </view>
+</theme>

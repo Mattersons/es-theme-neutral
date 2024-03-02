@@ -1,0 +1,81 @@
+<theme>
+<formatVersion>7</formatVersion>
+
+<customView name="grid2" inherits="grid" displayName="Grid (Carousel)">
+
+<imagegrid name="gamegrid">
+      <margin>0.005 0</margin>
+      <pos>0.01 0.470</pos>
+      <size>0.980 0.60</size>
+	  <scrollDirection>horizontal</scrollDirection>
+      <padding>0.05 0.14 0.05 0.19</padding>
+	  <autoLayout>7 1</autoLayout>
+	  <centerSelection>true</centerSelection>
+	  <autoLayoutSelectedZoom>1.2</autoLayoutSelectedZoom>
+      <animateSelection>false</animateSelection>
+      <scrollLoop>true</scrollLoop>
+</imagegrid>
+ 
+<gridtile name="default">
+      <backgroundColor>FFFFFF00</backgroundColor>
+      <backgroundCornerSize>9 9</backgroundCornerSize>
+      <selectionMode>image</selectionMode>
+      <padding>6 6</padding>
+      <imageColor>FFFFFFB0</imageColor>
+</gridtile>
+
+<text name="gridtile" ifSubset="gridnames:Yes">
+      <color>${textColour}</color>
+      <fontSize>0.014</fontSize>
+      <alignment>center</alignment>
+	  <fontPath>./../fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+	  <forceUppercase>1</forceUppercase>
+	  <forceUppercase ifSubset="ucase:no">0</forceUppercase>
+	  <size>0.8 0.1</size>
+</text> 
+
+<gridtile name="selected">
+      <backgroundCenterColor>051222</backgroundCenterColor>
+      <backgroundEdgeColor>${baseColour}</backgroundEdgeColor>
+      <imageColor>FFFFFFFF</imageColor>
+</gridtile>
+
+<image name="bar" extra="true">
+		<path>./../art/bar.png</path>
+        <pos>0 0.16</pos>
+        <size>1 0.40</size>
+</image>
+
+<video name="md_video">
+	<maxSize>0.38 0.38</maxSize>
+	<pos>0.78 0.36</pos>
+	<origin>0.5 0.5</origin>
+	<delay>0</delay>
+	<visible>true</visible>
+	<roundCorners>0.05</roundCorners>
+	<zIndex>90</zIndex>
+	<storyboard event="activateNext">
+       <animation property="opacity" from="0" to="1" duration="600" mode="easeOut"/>
+      </storyboard>
+      <storyboard event="activatePrev">
+       <animation property="opacity" from="0" to="1" duration="600" mode="easeOut"/>
+      </storyboard>
+      <storyboard event="deactivateNext">
+       <animation property="opacity" to="0" duration="600" mode="easeOut"/>
+      </storyboard>
+      <storyboard event="deactivatePrev">
+       <animation property="opacity" to="0" duration="600" mode="easeOut"/>
+      </storyboard>
+</video>
+
+<text name="md_description">
+      <pos>0.04 0.20</pos>
+      <size>0.5 0.32</size>
+	  <color>C0C0C0</color>
+      <forceUppercase>0</forceUppercase>
+      <fontPath>./../fonts/Cabin-Regular.ttf</fontPath>
+      <fontSize>0.023</fontSize>
+</text>
+
+</customView>
+</theme>

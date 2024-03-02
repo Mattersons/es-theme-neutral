@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+ <view name="gamecarousel">
+
+ 
+ 	<video name="md_video">
+         <pos>0.02 0.540</pos>
+     	 <origin>0 0</origin>
+         <delay>0.1</delay>
+	 <size>0.25 0.30</size>
+         <showSnapshotNoVideo>false</showSnapshotNoVideo>
+         <showSnapshotDelay>false</showSnapshotDelay>
+	 <roundCorners>0.05</roundCorners>
+         <effect>none</effect>
+	 <zIndex>7</zIndex>
+     	 </video>  
+
+
+  <image name="md_thumbnail">
+         <origin>0 0</origin>
+         <pos>0.150 0.160</pos>
+         <size>0.750 0.774</size>
+         <zIndex>2</zIndex>
+	<storyboard event="activateNext">
+       <animation property="opacity" from="0" to="1" duration="600" mode="easeOut"/>
+      </storyboard>
+      <storyboard event="activatePrev">
+       <animation property="opacity" from="0" to="1" duration="600" mode="easeOut"/>
+      </storyboard>
+      <storyboard event="deactivateNext">
+       <animation property="opacity" to="0" duration="600" mode="easeOut"/>
+      </storyboard>
+      <storyboard event="deactivatePrev">
+       <animation property="opacity" to="0" duration="600" mode="easeOut"/>
+      </storyboard>
+      </image>
+
+<text name="md_genre">
+<pos>0.04 0.800</pos>
+<size>0.20 0.15</size>
+</text>
+
+</view>
+</theme>

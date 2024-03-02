@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+ 
+<view name="detailed">
+
+<textlist name="gamelist">
+	<fontPath>./../../fonts/Cabin-Regular.ttf</fontPath>
+</textlist> 
+
+  </view>
+</theme>

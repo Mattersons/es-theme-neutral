@@ -1,0 +1,128 @@
+<theme>
+<formatVersion>7</formatVersion>
+<view name="system">
+
+
+<image name="background" extra="static">
+	<origin>0 0</origin>
+	<pos>0 0</pos>
+	<size>1 1</size>
+	<path>./../../art/bgsh3.png</path>
+	</image>
+
+<carousel name="systemcarousel">
+      <type>vertical_wheel</type>
+	  <color>5B5B5B00</color>
+      <pos>0.75 0.253</pos>
+      <size>0.25 0.677</size>
+      <logoScale>2.2</logoScale>
+      <logoSize>0.10 0.10</logoSize>
+      <logoAlignment>center</logoAlignment>
+      <maxLogoCount>10</maxLogoCount>
+      <imageSource>marquee</imageSource>
+	  <systemInfoDelay>400</systemInfoDelay>
+     <logoRotationOrigin>6.0 0</logoRotationOrigin>
+      <zIndex>50</zIndex>
+</carousel>  
+
+<image name="over" extra="static">
+         <origin>0 0</origin>
+         <pos>0 0.255</pos>
+         <size>1 0.676</size>
+         <path>./../../art/overlay2.png</path>
+         <zIndex>15</zIndex>
+</image>
+
+<video name="md_video" extra="static">
+		 <path>{random}</path>
+         <pos>0 0.258</pos>
+         <size>1 0.670</size>
+         <showSnapshotNoVideo>false</showSnapshotNoVideo>
+         <showSnapshotDelay>false</showSnapshotDelay>
+     	 <zIndex>10</zIndex>
+		 <storyboard>
+         <animation property="opacity" from="0" to="1" duration="500" mode="EaseIn"/>
+         </storyboard>	
+</video> 
+ 
+<image name="logo">
+	<linearSmooth>true</linearSmooth>
+	<path>./../../systems/logo/${system.theme}.svg</path>
+	<path>./../../systems/logo/${system.theme}.png</path>
+</image>
+
+<image name="logo" region="eu"/>
+<image name="logo" region="us">
+	<path>./../../systems/logo/us/${system.theme}.svg</path>
+	<path>./../../systems/logo/us/${system.theme}.png</path>
+</image>
+	
+
+<image name="systemsnap" extra="true">
+	<path>./../../systems/device/${system.theme}.png</path>
+ 	<origin>0.5 0.5</origin>
+	<pos>0.80 0.14</pos>
+	<maxSize>0.200 0.200</maxSize>
+	<linearSmooth>true</linearSmooth>
+	<storyboard>	 
+	 <animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+     <animation property="opacity" from="0" to="1" begin="250" duration="50" mode="easeIn"/>
+	 <animation property="scale" from="0" to="1.2" begin="250" duration="250" mode="easeOut"/> 
+	  <animation property="scale" from="1.2" to="1" begin="500" duration="250" mode="easeOut"/>
+	</storyboard>
+</image>
+
+<image name="systemsnap" extra="true" region="eu"/>
+	<image name="systemsnap" extra="true" region="us">
+	<path>./../../systems/device/us/${system.theme}.png</path>
+</image>
+
+<text name="fName" extra="static">
+        <text>${system.fullName}</text>
+        <fontPath>./../../fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+        <fontSize>0.032</fontSize>
+		<origin>0 0.5</origin>
+        <pos>0.02 0.08</pos>
+        <size>0.94 0.28</size>
+        <color>FFFFFF</color>
+		<alignment>left</alignment>
+	    <glowColor>00000016</glowColor>
+		<glowSize>3</glowSize>
+		<storyboard>
+        <animation property="opacity" from="0" to="1" duration="500" mode="easeIn"/>
+        </storyboard>
+</text>
+
+<text name="mName" extra="static">
+        <text>${system.manufacturer}</text>
+        <fontPath>./../../fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+        <fontSize>0.022</fontSize>
+		<forceUppercase>true</forceUppercase>
+		<origin>0 0.5</origin>
+        <pos>0.02 0.13</pos>
+        <size>0.94 0.28</size>
+		<color>909090</color>
+		<glowColor>00000016</glowColor>
+		<glowSize>3</glowSize>
+	    <storyboard>
+        <animation property="opacity" from="0" to="1" duration="500" mode="easeIn"/>
+        </storyboard>	
+</text>
+	
+<text name="systemInfo">
+	<pos>0 0.100</pos>           
+	<color>FFFFFF</color>
+	<fontPath>./../../fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+	<fontSize>0.04</fontSize>
+    <glowColor>00000016</glowColor>
+    <glowSize>3</glowSize>
+</text>
+	
+<helpsystem name="help">
+	<origin>0.5 0</origin>
+	<pos>0.5 0.950</pos>
+	</helpsystem>
+
+</view>
+
+</theme>
