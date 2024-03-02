@@ -4,7 +4,7 @@ Designed in 1920 x 1080. No other aspect ratios supported yet.
 
 ## Screenshots
 
-### Gamelist Views
+### Gamelist views
 
 | Detailed| Detailed (Alt)| Basic| Wheel Carousel|
 |-- |-- |-- |-- |
@@ -15,7 +15,7 @@ Designed in 1920 x 1080. No other aspect ratios supported yet.
 |-- |-- |-- |
 |![grid](https://github.com/Mattersons/es-theme-neutral/assets/161895306/66e908e3-07e7-4047-8b67-86da9c12cf6f) |![grid alt](https://github.com/Mattersons/es-theme-neutral/assets/161895306/4b6f7034-09eb-4229-b7e4-19f4a85b6ec7) |![gridc](https://github.com/Mattersons/es-theme-neutral/assets/161895306/932e7e7a-4f0f-4941-a6f9-a6c180b8704e)
 
-### System Views
+### System views
 
 |Horizontal | Horizontal (Alt) | Vertical| Wheel|
 |-- |-- |-- |-- |
@@ -23,8 +23,9 @@ Designed in 1920 x 1080. No other aspect ratios supported yet.
 
 There is also a simple view for both horizontal / vertical which shows one logo at a time on the carousel.
 
----
-## Theme Options
+--------------------------------
+
+### Theme options
 
 | Setting |  Options |
 | -- |-- |
@@ -47,5 +48,5 @@ There is also a simple view for both horizontal / vertical which shows one logo 
 |`Show icons` | Show or hide icons (Save state, manual, kid game & achievements)
 |`Carousel background` | Either large video and small box art or large box art and small video on carousel view only.
 
-## License
+## Licence
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
