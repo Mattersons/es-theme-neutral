@@ -1,7 +1,7 @@
 ﻿<theme>
   <formatVersion>7</formatVersion>
   <view name="basic">
-    <image name="background">
+    <image name="background" extra="true">
       <tile>false</tile>
       <size>1 1</size>
       <pos>0 0</pos>
@@ -9,6 +9,18 @@
       <path>./../art/bgg.png</path>
       </image>
    
+<image name="cbar" extra="true">
+	<origin>0 0</origin>
+	<pos>0 0</pos>
+	<size>1 0.157</size>
+	
+<path ifSubset="colorset:red">./../art/redbar.png</path>
+	<path ifSubset="colorset:green">./../art/greenbar.png</path>
+	<path ifSubset="colorset:yellow">./../art/yellowbar.png</path>
+	<path ifSubset="colorset:orange">./../art/orangebar.png</path>
+	<visible ifSubset="colorset:blue">false</visible>
+</image>
+
 
 <image name="logo">
 	<path>./../systems/logo/${system.theme}.svg</path>
@@ -119,7 +131,7 @@
               <alignment>left</alignment>
               <fontPath>./../art/fonts/TitilliumWeb-SemiBold.ttf</fontPath>
               <fontSize>0.018</fontSize>
-              <color>FFFFFF</color>
+              <color>969696</color>
               <multiLine>false</multiLine>
 </text>
 

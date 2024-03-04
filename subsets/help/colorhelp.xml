@@ -5,6 +5,7 @@
   <customView name="system,basic,detailed,grid,detailed2,grid2,grid3,grid4,gamecarousel">
     <helpsystem name="help">
       <iconColor>${baseColour}</iconColor>
+      <textColor>303030</textColor>
     </helpsystem>
   </customView>
 </theme>

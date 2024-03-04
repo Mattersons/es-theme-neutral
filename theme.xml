@@ -3,7 +3,7 @@
 <!--
 Theme:			Neutral
 Author:			Matt
-github:			https://github.com/Mattersons/es-theme-neutral
+github:			https://github.com/
 Originally based on:	"Carbon" by Fabrice CARUSO
 -->
 
@@ -27,6 +27,7 @@ Originally based on:	"Carbon" by Fabrice CARUSO
 	  <include name="horizontal3" displayName="Carousel">./subsets/systemview/carousel.xml</include>
 	  <include name="vertical" displayName="Vertical">./subsets/systemview/vertical.xml</include>
 	  <include name="simplev" displayName="Vertical (Simple)">./subsets/systemview/simplev.xml</include>
+	  <include name="txtlist" displayName="Text List">./subsets/systemview/textlist.xml</include>
 </subset>
 
 <variables>
