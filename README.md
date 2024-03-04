@@ -17,9 +17,14 @@ Designed in 1920 x 1080. No other aspect ratios supported yet.
 
 ### System views
 
-|Horizontal | Horizontal (Alt) | Vertical| Wheel|
-|-- |-- |-- |-- |
-|![sysh1](https://github.com/Mattersons/es-theme-neutral/assets/161895306/2351a417-a7b5-4c18-911a-e284df820ed7)|![sysh2](https://github.com/Mattersons/es-theme-neutral/assets/161895306/63e30890-970c-47ee-b175-9126832d5e07) | ![sysv](https://github.com/Mattersons/es-theme-neutral/assets/161895306/1ca90d38-fe40-41d9-9e62-1d875149dfb2) | ![sysc](https://github.com/Mattersons/es-theme-neutral/assets/161895306/7bd97ce6-79f6-49da-a6cd-9f12aed4c065)
+|Horizontal | Horizontal (Alt) | Vertical|
+|-- |-- |-- |
+|![sysh1](https://github.com/Mattersons/es-theme-neutral/assets/161895306/2351a417-a7b5-4c18-911a-e284df820ed7)|![sysh2](https://github.com/Mattersons/es-theme-neutral/assets/161895306/63e30890-970c-47ee-b175-9126832d5e07) | ![sysv](https://github.com/Mattersons/es-theme-neutral/assets/161895306/1ca90d38-fe40-41d9-9e62-1d875149dfb2) | 
+
+|Wheel| Text list|
+|-- |-- |
+|![sysc](https://github.com/Mattersons/es-theme-neutral/assets/161895306/7bd97ce6-79f6-49da-a6cd-9f12aed4c065)|![txtlist](https://github.com/Mattersons/es-theme-neutral/assets/161895306/fb245d2b-65a1-4ef4-9a58-460acb1b74d8)
+
 
 There is also a simple view for both horizontal / vertical which shows one logo at a time on the carousel.
 
@@ -30,7 +35,7 @@ There is also a simple view for both horizontal / vertical which shows one logo 
 | Setting |  Options |
 | -- |-- |
 |`Region` | US or EU logos|
-|`System View`|Horizontal / Horizontal (Alt) / Horizontal (Simple) / Carousel / Vertical / Vertical (Simple)
+|`System View`|Horizontal / Horizontal (Alt) / Horizontal (Simple) / Carousel / Vertical / Vertical (Simple) / Text list
 |`Colour` |Blue / Red / Green / Yellow / Orange
 |`Show extended system info on carousel` |Show or hide extended info on system carousel (Number of games played, system last played date)
 |`Help Icons` |Default / Default with theme colour / Buttons with the location showing / Xbox / Playstation
