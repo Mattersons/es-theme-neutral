@@ -177,10 +177,9 @@
 	  <color>FFFFFF</color>
 	    <storyboard>
         <animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
-        <animation property="opacity" from="0" to="1" begin="150" duration="350" mode="easeIn"/>
-        <animation property="scale" from="0" to="1" begin="150" duration="350" mode="easeOut"/> 
-      </storyboard>
-	  </text>
+        <animation property="opacity" from="0" to="1" begin="150" duration="150" mode="easeIn"/>
+        </storyboard>          
+	</text>
 
 <helpsystem name="help">
 	<origin>0.5 0</origin>
@@ -188,5 +187,4 @@
 	</helpsystem>
 
   </view>
-  
-</theme>
+ </theme>
