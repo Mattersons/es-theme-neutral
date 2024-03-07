@@ -35,7 +35,7 @@ There is also a simple view for both horizontal / vertical which shows one logo 
 | Setting |  Options |
 | -- |-- |
 |`Region` | US or EU logos|
-|`System View`|Horizontal / Horizontal (Alt) / Horizontal (Simple) / Carousel / Vertical / Vertical (Simple) / Text list
+|`System View`|Horizontal / Horizontal (Alt) / Horizontal (Simple) / Carousel / Vertical / Vertical (Simple) / Text List / Grid
 |`Colour` |Blue / Red / Green / Yellow / Orange
 |`Show extended system info on carousel` |Show or hide extended info on system carousel (Number of games played, system last played date)
 |`Help Icons` |Default / Default with theme colour / Buttons with the location showing / Xbox / Playstation
