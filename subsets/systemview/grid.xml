@@ -8,7 +8,7 @@
       <size>1 1</size>
       <pos>0 0</pos>
       <origin>0 0</origin>
-      <path>./../../art/sg.png</path>
+      <path>./../../art/bgg.png</path>
 </image> 
   
 <image name="cbar" extra="true">
@@ -24,7 +24,7 @@
 </image> 
 
 <imagegrid name="imagegrid">
-      <pos>0.010 0.17</pos>
+      <pos>0.002 0.17</pos>
       <size>0.99 0.75</size>
       <autoLayout>0 3</autoLayout>
       <cellProportion>1.3</cellProportion>
@@ -37,10 +37,10 @@
 
       <itemTemplate>
       <container>
-          <scale>1</scale>
-          <storyboard event="activate">
-           <animation property="scale" to="1.045" duration="250" mode="easeOut"/>
-          </storyboard>
+         <scale>1</scale>
+         <storyboard event="activate">
+         <animation property="scale" to="1.06" duration="250" mode="easeOut"/>
+        </storyboard>
           <storyboard event="deactivate">
             <animation property="scale" to="1" duration="150" mode="easeOut"/>
           </storyboard>
@@ -50,55 +50,46 @@
           <pos>0.5 0.5</pos>
           <size>1 1</size>
 		  <zIndex>3</zIndex>
-          <color>424242</color>
+          <color>000000</color>
 		  <path>./../../art/square.png</path>
           <roundCorners>0</roundCorners>
 		  <scale>1</scale>
 		  <storyboard event="activate"  repeat="forever">
-          <animation property="scale" from="1" to="1.02"/>
-		  <animation property="color" from="424242" to="DCDCDC" duration="800" mode="easeOut"/>
-		  <animation property="color" from="DCDCDC" to="424242" begin="800" duration="800" mode="easeOut"/>
+       	  <animation property="color" from="${baseColour}" to="DCDCDC" duration="800" mode="easeOut"/>
+		  <animation property="color" from="DCDCDC" to="${baseColour}" begin="800" duration="800" mode="easeOut"/>
+		  <animation property="scale" from="1" to="1.01" mode="easeOut"/>
 		  </storyboard>
           <storyboard event="deactivate">
-          <animation property="color" from="DCDCDC" to="424242" begin="0" duration="0" mode="easeOut"/>
-		  <animation property="scale" from="1.02" to="1"/>
+          <animation property="color" from="DCDCDC" to="000000" begin="0" duration="0" mode="easeOut"/>
+		  <animation property="scale" from="1.01" to="1" mode="easeOut"/>
 		  </storyboard>
 </image>    
-		
 	
 <image name="bg2" extra="true">
           <origin>0.5 0.5</origin>
           <pos>0.5 0.5</pos>
           <size>1 1</size>
 	      <zIndex>4</zIndex>
-          <color>303030</color>
+          <color>a6a392</color>
           <path>./../../art/square.png</path>
           <roundCorners>0</roundCorners>
-          <scale>0.980</scale>
-		   <storyboard event="activate"  repeat="forever">
-       	  <animation property="color" from="303030" to="404040" duration="0"/>
-		   </storyboard>
+          <scale>0.990</scale>
+		  <storyboard event="activate"  repeat="forever">
+       	  <animation property="color" from="a6a392" to="454545" duration="0"/>
+		  </storyboard>
 	      <storyboard event="deactivate">
-          <animation property="color" from="404040" to="303030" duration="0"/>
+          <animation property="color" from="454545" to="a6a392" duration="0"/>
 		  </storyboard>
 </image> 	
-	
+
 <container padding="0.1">
             
-<image name="theLogoImage" pos="0.5" origin="0.5" maxSize="1" opacity="0.35" linearSmooth="true">
+<image name="theLogoImage" pos="0.5" origin="0.5" maxSize="1" opacity="0.9" linearSmooth="true">
 <path>firstfile(
               "${themePath}/systems/logo/${region}/" + {system:theme} + ".svg",
               "${themePath}/systems/logo/" + {system:theme} + ".svg", 
 	          "${themePath}/systems/logo/${region}/" + {system:theme} + ".png",
               "${themePath}/systems/logo/" + {system:theme} + ".png",)</path>
-    	    <storyboard event="activate">
-          	<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
-			<animation property="opacity" from="0" to="1" begin="0" duration="50" mode="easeIn"/>
-			</storyboard>
-			<storyboard event="deactivate">
-           	<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
-			<animation property="opacity" from="0" to="0.35" begin="0" duration="50" mode="easeIn"/>
-		  </storyboard> 
 </image>
 </container>
 </container>
@@ -147,4 +138,5 @@
 </helpsystem>
   
   </view>
+  
 </theme>
