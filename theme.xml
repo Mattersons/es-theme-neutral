@@ -28,6 +28,7 @@ Originally based on:	"Carbon" by Fabrice CARUSO
 	  <include name="vertical" displayName="Vertical">./subsets/systemview/vertical.xml</include>
 	  <include name="simplev" displayName="Vertical (Simple)">./subsets/systemview/simplev.xml</include>
 	  <include name="txtlist" displayName="Text List">./subsets/systemview/textlist.xml</include>
+	  <include name="grid" displayName="Grid">./subsets/systemview/grid.xml</include>
 </subset>
 
 <variables>

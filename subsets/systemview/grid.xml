@@ -1,0 +1,150 @@
+<theme>
+<formatVersion>7</formatVersion>
+  
+<view name="system">
+
+<image name="background" extra="true">
+      <tile>false</tile>
+      <size>1 1</size>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <path>./../../art/sg.png</path>
+</image> 
+  
+<image name="cbar" extra="true">
+	<origin>0 0</origin>
+	<pos>0 0</pos>
+	<size>1 0.157</size>
+	
+	<path ifSubset="colorset:red">./../../art/redbar.png</path>
+	<path ifSubset="colorset:green">./../../art/greenbar.png</path>
+	<path ifSubset="colorset:yellow">./../../art/yellowbar.png</path>
+	<path ifSubset="colorset:orange">./../../art/orangebar.png</path>
+	<visible ifSubset="colorset:blue">false</visible>
+</image> 
+
+<imagegrid name="imagegrid">
+      <pos>0.010 0.17</pos>
+      <size>0.99 0.75</size>
+      <autoLayout>0 3</autoLayout>
+      <cellProportion>1.3</cellProportion>
+      <margin>15 15</margin>
+	  <padding>0.03 0.009 0.03 0.011</padding>
+      <scrollbarColor>404040</scrollbarColor>
+      <scrollbarCorner>0.49</scrollbarCorner>
+      <scrollbarSize>0.0045</scrollbarSize>
+      <scrollbarAlignment>right</scrollbarAlignment>
+
+      <itemTemplate>
+      <container>
+          <scale>1</scale>
+          <storyboard event="activate">
+           <animation property="scale" to="1.045" duration="250" mode="easeOut"/>
+          </storyboard>
+          <storyboard event="deactivate">
+            <animation property="scale" to="1" duration="150" mode="easeOut"/>
+          </storyboard>
+
+<image name="bg1" extra="true">
+          <origin>0.5 0.5</origin>
+          <pos>0.5 0.5</pos>
+          <size>1 1</size>
+		  <zIndex>3</zIndex>
+          <color>424242</color>
+		  <path>./../../art/square.png</path>
+          <roundCorners>0</roundCorners>
+		  <scale>1</scale>
+		  <storyboard event="activate"  repeat="forever">
+          <animation property="scale" from="1" to="1.02"/>
+		  <animation property="color" from="424242" to="DCDCDC" duration="800" mode="easeOut"/>
+		  <animation property="color" from="DCDCDC" to="424242" begin="800" duration="800" mode="easeOut"/>
+		  </storyboard>
+          <storyboard event="deactivate">
+          <animation property="color" from="DCDCDC" to="424242" begin="0" duration="0" mode="easeOut"/>
+		  <animation property="scale" from="1.02" to="1"/>
+		  </storyboard>
+</image>    
+		
+	
+<image name="bg2" extra="true">
+          <origin>0.5 0.5</origin>
+          <pos>0.5 0.5</pos>
+          <size>1 1</size>
+	      <zIndex>4</zIndex>
+          <color>303030</color>
+          <path>./../../art/square.png</path>
+          <roundCorners>0</roundCorners>
+          <scale>0.980</scale>
+		   <storyboard event="activate"  repeat="forever">
+       	  <animation property="color" from="303030" to="404040" duration="0"/>
+		   </storyboard>
+	      <storyboard event="deactivate">
+          <animation property="color" from="404040" to="303030" duration="0"/>
+		  </storyboard>
+</image> 	
+	
+<container padding="0.1">
+            
+<image name="theLogoImage" pos="0.5" origin="0.5" maxSize="1" opacity="0.35" linearSmooth="true">
+<path>firstfile(
+              "${themePath}/systems/logo/${region}/" + {system:theme} + ".svg",
+              "${themePath}/systems/logo/" + {system:theme} + ".svg", 
+	          "${themePath}/systems/logo/${region}/" + {system:theme} + ".png",
+              "${themePath}/systems/logo/" + {system:theme} + ".png",)</path>
+    	    <storyboard event="activate">
+          	<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="1" begin="0" duration="50" mode="easeIn"/>
+			</storyboard>
+			<storyboard event="deactivate">
+           	<animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+			<animation property="opacity" from="0" to="0.35" begin="0" duration="50" mode="easeIn"/>
+		  </storyboard> 
+</image>
+</container>
+</container>
+</itemTemplate>
+</imagegrid>
+
+<text name="systemInfo" visible="false"/>
+    <text name="systemInfoEx" extra="true" ifSubset="sysinfo:Yes">
+	<text> 
+	Favorites : {binding:favorites}
+	 Games played : {binding:gamesPlayed} of {binding:total}
+	 Most played : {binding:mostPlayed}
+	 Last played : {binding:lastPlayedDate}</text>
+      <alignment>right</alignment>
+	  <fontPath>./../../fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+      <fontSize>0.020</fontSize>
+      <pos>0.02 0.01</pos>
+      <size>0.94 0.16</size>
+	  <color>FFFFFF</color>
+	    <storyboard>
+        <animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="150" duration="150" mode="easeIn"/>
+        </storyboard>
+</text>
+  
+<text name="header" extra="true">
+      <text>{system:fullName}</text>
+      <size>1 0</size>
+	  <origin>0.5 0</origin>
+      <pos>0.52 0.050</pos>
+      <alignment>left</alignment>
+      <color>FFFFFF</color>
+      <fontPath>./../../fonts/TitilliumWeb-SemiBold.ttf</fontPath>
+      <fontSize>0.040</fontSize>
+	  	<glowColor>00000016</glowColor>
+		<glowSize>4</glowSize>
+		<storyboard>
+        <animation property="opacity" from="0" to="0" duration="1" mode="linear"/>
+        <animation property="opacity" from="0" to="1" begin="150" duration="150" mode="easeIn"/>
+        </storyboard>     
+</text>
+    
+<helpsystem name="help">
+	<origin>0.5 0</origin>
+	<pos>0.5 0.950</pos>
+</helpsystem>
+  
+  </view>
+</theme>
