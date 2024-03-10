@@ -23,7 +23,8 @@ Designed in 1920 x 1080. No other aspect ratios supported yet.
 
 |Wheel| Text List| Grid|
 |-- |-- |-- |
-|![sysc](https://github.com/Mattersons/es-theme-neutral/assets/161895306/7bd97ce6-79f6-49da-a6cd-9f12aed4c065)|![txtlist](https://github.com/Mattersons/es-theme-neutral/assets/161895306/fb245d2b-65a1-4ef4-9a58-460acb1b74d8)|![Untitled](https://github.com/Mattersons/es-theme-neutral/assets/161895306/f51c9715-e6cc-4a11-9c5f-d1260cabd985)
+|![sysc](https://github.com/Mattersons/es-theme-neutral/assets/161895306/7bd97ce6-79f6-49da-a6cd-9f12aed4c065)|![txtlist](https://github.com/Mattersons/es-theme-neutral/assets/161895306/fb245d2b-65a1-4ef4-9a58-460acb1b74d8)|![Untitled](https://github.com/Mattersons/es-theme-neutral/assets/161895306/fe681754-a13b-4f8d-9c6d-05bb7c40b785)
+
 
 
 There is also a simple view for both horizontal / vertical which shows one logo at a time on the carousel.
