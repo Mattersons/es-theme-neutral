@@ -26,12 +26,12 @@
 
 <text name="gridtile" ifSubset="gridnames:Yes">
       <color>${textColour}</color>
-      <fontSize>0.014</fontSize>
+      <fontSize>0.017</fontSize>
       <alignment>center</alignment>
 	  <fontPath>./../fonts/TitilliumWeb-SemiBold.ttf</fontPath>
 	  <forceUppercase>1</forceUppercase>
 	  <forceUppercase ifSubset="ucase:no">0</forceUppercase>
-	  <size>0.8 0.1</size>
+	  <size>0.9 0.2</size>
 </text> 
 
 <gridtile name="selected">

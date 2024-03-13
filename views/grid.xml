@@ -64,7 +64,7 @@
   
 <text name="gridtile" ifSubset="gridnames:Yes">
       <color>${textColour}</color>
-	  <fontSize>0.016</fontSize>
+	  <fontSize>0.018</fontSize>
       <alignment>center</alignment>
 	  <fontPath>./../fonts/TitilliumWeb-SemiBold.ttf</fontPath>
 	  <forceUppercase>1</forceUppercase>
