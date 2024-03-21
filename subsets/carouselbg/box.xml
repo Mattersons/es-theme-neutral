@@ -9,7 +9,7 @@
      	 <origin>0 0</origin>
          <delay>0.1</delay>
 	 <size>0.25 0.30</size>
-         <showSnapshotNoVideo>false</showSnapshotNoVideo>
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
          <showSnapshotDelay>false</showSnapshotDelay>
 	 <roundCorners>0.05</roundCorners>
          <effect>none</effect>

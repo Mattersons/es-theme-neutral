@@ -266,6 +266,7 @@
 	<delay>0</delay>
 	<zIndex>90</zIndex>
 	<roundCorners>0.05</roundCorners>
+	<showSnapshotNoVideo>true</showSnapshotNoVideo>
 </video>
 
 </view>

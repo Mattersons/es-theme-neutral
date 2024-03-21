@@ -24,7 +24,7 @@
          <size>1 0.770</size>
          <origin>0 0</origin>
          <delay>0.2</delay>
-         <showSnapshotNoVideo>false</showSnapshotNoVideo>
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
          <showSnapshotDelay>false</showSnapshotDelay>
          <effect>none</effect>
 	 <zIndex>2</zIndex>
