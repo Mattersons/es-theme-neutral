@@ -38,8 +38,8 @@ Originally based on:	"Carbon" by Fabrice CARUSO
 	<baseColour ifSubset="colorset:orange">FF9138</baseColour>
 	<baseColour ifSubset="colorset:blue">3082ce</baseColour>
 	
-	<textColour ifSubset="listcolour:black">000000</textColour>
 	<textColour ifSubset="listcolour:white">969696</textColour>
+	<textColour ifSubset="listcolour:black">000000</textColour>
 	</variables>
 
  <subset name="colorset" displayName="Colour">
