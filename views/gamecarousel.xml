@@ -109,7 +109,7 @@
 	<size>0 0.04</size>
 	<visible>true</visible>
 	<pos>0.61 0.106</pos>
-	<color>FFFF00</color>
+	<color>FFCC00D0</color>
    	<unfilledColor>D0D0D0D0</unfilledColor>
     <unfilledPath>./../art/star_filled.png</unfilledPath>
 </rating>

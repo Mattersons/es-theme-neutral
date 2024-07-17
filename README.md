@@ -2,6 +2,8 @@ Neutral, based on Carbon by Fabrice CARUSO. For full compatibilty use Batocera 3
 
 Designed in 1920 x 1080. No other aspect ratios supported yet.
 
+17/7/24 - New 'Content' view added for gamelist. See 'Content View Art' in theme options to select either marquees or boxart. 
+
 ## Screenshots
 
 ### Gamelist views

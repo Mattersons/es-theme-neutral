@@ -2,7 +2,7 @@
 <theme>
   <formatVersion>7</formatVersion>
   <include>./default.xml</include>
-  <customView name="system,basic,detailed,grid,detailed2,grid2,grid3,grid4,gamecarousel">
+  <customView name="system,basic,detailed,grid,detailed2,grid2,grid3,grid4,gamecarousel,content">
     <helpsystem name="help">
       <iconA>:/help/button_b.svg</iconA>
       <iconB>:/help/button_a.svg</iconB>

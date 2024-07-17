@@ -3,7 +3,7 @@
 <!--
 Theme:			Neutral
 Author:			Matt
-github:			https://github.com/
+github:			https://github.com/Mattersons/es-theme-neutral
 Originally based on:	"Carbon" by Fabrice CARUSO
 -->
 
@@ -18,10 +18,17 @@ Originally based on:	"Carbon" by Fabrice CARUSO
 <include>./views/grid2.xml</include>
 <include>./views/gamecarousel.xml</include>
 
+
+  <subset name="contentimage" displayName="Content View Art">
+    <include name="marquee" displayName="Marquee" />
+    <include name="boxart" displayName="Boxart" />
+  </subset>
+
+<include>./views/content.xml</include>
 <include>./layouts/${system.theme}.xml</include>
 
 <subset name="systemview" displayName="System View">
-    	  <include name="horizontal" displayName="Horizontal">./subsets/systemview/horizontal.xml</include>
+      <include name="horizontal" displayName="Horizontal">./subsets/systemview/horizontal.xml</include>
 	  <include name="horizontal2" displayName="Horizontal (Alternative)">./subsets/systemview/horizontal2.xml</include>
 	  <include name="simpleh" displayName="Horizontal (Simple)">./subsets/systemview/simpleh.xml</include>
 	  <include name="horizontal3" displayName="Carousel">./subsets/systemview/carousel.xml</include>
@@ -79,10 +86,6 @@ Originally based on:	"Carbon" by Fabrice CARUSO
 	<include name="yes" displayName="Yes" />	
 </subset>
 
-<subset name="icons" displayName="Show icons" appliesTo="detailed,detailed2,grid,grid2,grid3,gamecarousel">
-	<include name="yes" displayName="Yes" />	
-	<include name="no" displayName="No" />
-</subset>
 
 <subset name="cview" displayName="Carousel background" appliesTo="gamecarousel">
 	<include name="video" displayName="Large video, small boxart">./subsets/carouselbg/video.xml</include>
@@ -108,6 +111,10 @@ Originally based on:	"Carbon" by Fabrice CARUSO
     <include name="Crt" displayName="CRT">./subsets/shader/crt.xml</include>
   </subset>
 
+<subset name="icons" displayName="Show icons" appliesTo="detailed,detailed2,grid,grid2,grid3,gamecarousel,content">
+	<include name="yes" displayName="Yes" />	
+	<include name="no" displayName="No" />
+</subset>
 
 <view name="screen">
 

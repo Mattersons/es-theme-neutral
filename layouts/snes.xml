@@ -31,8 +31,15 @@
 <customView name="grid2">
 	<imagegrid name="gamegrid">
            <autoLayout>7 1</autoLayout>
-	<autoLayoutSelectedZoom>1.1</autoLayoutSelectedZoom>
-	</imagegrid>
+		<autoLayoutSelectedZoom>1.1</autoLayoutSelectedZoom>
+		</imagegrid>
 </customView>
 
+
+<customView name="content">
+
+<imagegrid name="gamegrid">
+           <autoLayout>3 4</autoLayout>
+		</imagegrid>
+</customView>
 </theme>

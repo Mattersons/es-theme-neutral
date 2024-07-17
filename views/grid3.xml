@@ -31,23 +31,6 @@
       <imageColor>FFFFFFFF</imageColor>
 </gridtile>
 
-
-<image name="md_marquee">
-<storyboard event="activateNext">
-       <animation property="opacity" from="0" to="1" duration="600" mode="easeOut"/>
-      </storyboard>
-      <storyboard event="activatePrev">
-       <animation property="opacity" from="0" to="1" duration="600" mode="easeOut"/>
-      </storyboard>
-      <storyboard event="deactivateNext">
-       <animation property="opacity" to="0" duration="600" mode="easeOut"/>
-      </storyboard>
-      <storyboard event="deactivatePrev">
-       <animation property="opacity" to="0" duration="600" mode="easeOut"/>
-      </storyboard>
-</image>
-
-
 <image name="sidebar" extra="true">
 	<path>./../art/bar.png</path>
 	<pos>0.75 0.160</pos>
