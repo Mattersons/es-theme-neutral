@@ -13,9 +13,9 @@ Designed in 1920 x 1080. No other aspect ratios supported yet.
 |![detailed](https://github.com/Mattersons/es-theme-neutral/assets/161895306/ba3184e3-f0cf-4a8c-9133-d24f6bf010a3)| ![detailed alt](https://github.com/Mattersons/es-theme-neutral/assets/161895306/9990c51b-3994-438a-9170-b6d1a2cc230a) | ![basic](https://github.com/Mattersons/es-theme-neutral/assets/161895306/01e8f063-d37f-4917-98e5-ae7bd27453c2) |![carousel](https://github.com/Mattersons/es-theme-neutral/assets/161895306/3e6ced2a-880e-40e1-a115-9688edb0cc30)
 
 
-| Grid | Grid (Alt)| Grid Carousel|
-|-- |-- |-- |
-|![grid](https://github.com/Mattersons/es-theme-neutral/assets/161895306/66e908e3-07e7-4047-8b67-86da9c12cf6f) |![grid alt](https://github.com/Mattersons/es-theme-neutral/assets/161895306/4b6f7034-09eb-4229-b7e4-19f4a85b6ec7) |![gridc](https://github.com/Mattersons/es-theme-neutral/assets/161895306/932e7e7a-4f0f-4941-a6f9-a6c180b8704e)
+| Grid | Grid (Alt)| Grid Carousel| Content|
+|-- |-- |-- |-- |
+|![grid](https://github.com/Mattersons/es-theme-neutral/assets/161895306/66e908e3-07e7-4047-8b67-86da9c12cf6f) |![grid alt](https://github.com/Mattersons/es-theme-neutral/assets/161895306/4b6f7034-09eb-4229-b7e4-19f4a85b6ec7) |![gridc](https://github.com/Mattersons/es-theme-neutral/assets/161895306/932e7e7a-4f0f-4941-a6f9-a6c180b8704e)|![Untitled](https://github.com/user-attachments/assets/29412c73-8384-4624-8702-126a684fee64)
 
 ### System views
 
@@ -23,17 +23,14 @@ Designed in 1920 x 1080. No other aspect ratios supported yet.
 |-- |-- |-- |
 |![sysh1](https://github.com/Mattersons/es-theme-neutral/assets/161895306/2351a417-a7b5-4c18-911a-e284df820ed7)|![sysh2](https://github.com/Mattersons/es-theme-neutral/assets/161895306/63e30890-970c-47ee-b175-9126832d5e07) | ![sysv](https://github.com/Mattersons/es-theme-neutral/assets/161895306/1ca90d38-fe40-41d9-9e62-1d875149dfb2) | 
 
-|Wheel| Text List|
-|-- |-- |
-|![sysc](https://github.com/Mattersons/es-theme-neutral/assets/161895306/7bd97ce6-79f6-49da-a6cd-9f12aed4c065)|![txtlist](https://github.com/Mattersons/es-theme-neutral/assets/161895306/fb245d2b-65a1-4ef4-9a58-460acb1b74d8)
+|Wheel| Text List| Grid|
+|-- |-- |-- |
+|![sysc](https://github.com/Mattersons/es-theme-neutral/assets/161895306/7bd97ce6-79f6-49da-a6cd-9f12aed4c065)|![txtlist](https://github.com/Mattersons/es-theme-neutral/assets/161895306/fb245d2b-65a1-4ef4-9a58-460acb1b74d8)|![Untitled](https://github.com/Mattersons/es-theme-neutral/assets/161895306/fe681754-a13b-4f8d-9c6d-05bb7c40b785)
 
-|Grid| Content|
-|-- |-- |
-![Untitled](https://github.com/Mattersons/es-theme-neutral/assets/161895306/fe681754-a13b-4f8d-9c6d-05bb7c40b785)|![Untitled](https://github.com/user-attachments/assets/29412c73-8384-4624-8702-126a684fee64)
+
+
 
 There is also a simple view for both horizontal / vertical which shows one logo at a time on the carousel.
-
---------------------------------
 
 ### Theme options
 
